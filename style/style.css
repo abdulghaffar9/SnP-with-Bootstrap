@@ -1,0 +1,606 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  :root {
+    /* Colors */
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ed1c24;
+    --grey: #1d1d1d;
+    --bg-grey: #0f0f0f;
+    --l-gray: rgb(186, 183, 183);
+  
+    /* Fonts */
+    --futura: "futura";
+    --butler: "butler";
+    --inter: "inter";
+    --poppins: "poppns";
+    --apercu: "apercu";
+  }
+  
+  /* Boiler Plate */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0;
+    margin: 9;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+  
+  @font-face {
+    font-family: futura;
+    src: url(../fonts/Futurak.woff2);
+  }
+  @font-face {
+    font-family: inter;
+    src: url(../fonts/Inter-VariableFont_opsz\wght.woff2);
+  }
+  @font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.woff2);
+  }
+  @font-face {
+    font-family: butler;
+    src: url(../fonts/Butler_Regular.woff2);
+  }
+  @font-face {
+    font-family: apercu;
+    src: url(../fonts/Apercu\ Regular.woff2);
+  }
+
+  /* nav bar started */
+  nav{
+    gap: 8rem;
+  }
+
+  .nav-bar{
+    font-size: 2rem;
+    margin: 3rem;
+
+   
+  }
+  .nav-bar >a{
+    text-decoration: none;
+    color: var(--white);
+    margin: 2rem;
+    font-family: var(--apercu);
+
+  }
+  .nav >img{
+    width: 165px;
+  }
+  .nav-bar > button{
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border-radius:3rem;
+    border: 1px solid var(--white);
+    font-family: var(--apercu);
+    background-color: transparent;
+    color: var(--white);
+    margin: 1rem;
+  }
+  .nav-bar >.order-btn{
+    background-color: var(--red);
+    border: 0px;
+  }
+
+  .nav-bar > .order-btn span{
+    background-color: var(--white);
+    color: var(--red);
+    padding: .5rem;
+    border-radius: 2rem;
+  }
+  /* nav bar ended */
+
+
+  /* brand container started */
+  .container{
+    margin-top: 3rem;
+    gap: 8rem;
+  }
+  .container .card{
+    background-color: transparent;
+    margin: 2.8rem;
+    align-items: center;
+   
+  }
+
+  .container .card img{
+    background-color:var(--white);
+   padding: 0px 50px;
+   min-width: 280px;
+   
+  }
+  .container .card .btn{
+    color: white;
+    border-color: var(--bg-grey);
+    font-size: 1.6rem;
+    font-family:var(--apercu);
+    min-width: 150px;
+    padding: 1rem;
+  }
+  .text-center{
+    align-items: center;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 4rem;
+    font-weight: 300;
+
+  }
+  .text-center > .brand-name{
+    font-family: var(--futura);
+  }
+  .parra{
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.8rem;
+    /* font-weight: 300; */
+    color: var(--l-gray);
+  }
+
+  /* brand container ended */
+
+
+  
+  /* franchise section started */
+  .franchise-section{
+    gap: 1rem;
+    /* background-color: var(--bg-grey); */
+    /* background-color: yellow; */
+  }
+
+.franchise-section >.card{
+  /* background-color: red; */
+  margin: 2rem;
+  width: 45%;
+ /* min-height: 500px; */
+ border: 0px;
+ background-color: transparent;
+}
+.franchise-section >.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.franchise-section > .card-1{
+ width: 100%;
+ background-color:transparent;
+}
+.franchise-section > .card-1 h1{
+  color: var(--white);
+}
+.franchise-section > .card .card-subtitle{
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-family: var(--apercu);
+  text-transform: uppercase;
+  /* margin-left: 12rem; */
+  margin-bottom: 0px;
+  color: var(--red);
+}
+
+.franchise-section > .card .card-title{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 3.5rem;
+  color: var(--white);
+}
+.franchise-section > .card .card-title .brand-name{
+  font-family:var(--futura) ;
+}
+
+.franchise-section > .card .address{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1.5rem;
+  color: var(--l-gray);
+}
+.franchise-section > .card .phone{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1.5rem;
+  color: var(--l-gray);
+}
+
+.franchise-section > .card button{
+  margin-top: 2rem;
+  /* margin-left: 12rem; */
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem .5rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+  /* background-color:green; */
+  max-width: 160px;
+  background-color: transparent;
+  
+
+}
+.franchise-section > .card button span{
+  background-color: var(--white);
+  color: var(--red);
+  padding: .5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+
+  /* franchise section ended */
+
+  /* express section started */
+
+
+
+  .express-section{
+    gap: 4rem;
+    background-color: var(--bg-grey);
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+    /* background-color: yellow; */
+  }
+
+.express-section >.card-1{
+  /* background-color: red; */
+  margin-top: 4rem;
+  width: 100%;
+ /* min-height: 500px; */
+ border: 0px;
+ background-color: transparent;
+}
+.express-section >.card{
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+
+
+.express-section >.card-1 .text-center{
+  align-items: center;
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--white);
+  font-family: var(--butler);
+
+
+}
+.express-section.text-center > .brand-name{
+  font-family: var(--futura);
+}
+ 
+
+.express-section > .card .card-subtitle{
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-family: var(--apercu);
+  text-transform: uppercase;
+  /* margin-left: 12rem; */
+  margin-top:2rem;
+  color: var(--red);
+
+}
+
+.express-section > .card .card-title{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 2.5rem;
+  color: var(--white);
+}
+.express-section > .card .card-title .brand-name{
+  font-family:var(--futura) ;
+}
+
+.express-section > .card .address{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1rem;
+  color: var(--l-gray);
+}
+.express-section > .card .phone{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1rem;
+  color: var(--l-gray);
+}
+
+.express-section > .card button{
+  margin-top: 2rem;
+  /* margin-left: 12rem; */
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem .8rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+  /* background-color:green; */
+  max-width: 160px;
+  background-color: transparent;
+  
+
+}
+.express-section > .card button span{
+  background-color: var(--white);
+  color: var(--red);
+  padding: .5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+
+}
+.express-section > .card button span i{
+  transform: rotate(-45deg);
+}
+  /* express section ended */
+
+  /* village section started */
+
+  .village-section{
+    gap: 4rem;
+    background-color: var(--bg-grey);
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    /* background-color: yellow; */
+  }
+  .village-section > img{
+  margin-left: -350px;
+  }
+
+.village-section >.card-1{
+  /* background-color: red; */
+  margin-top: 4rem;
+  width: 100%;
+ /* min-height: 500px; */
+ border: 0px;
+ background-color: transparent;
+}
+.village-section >.card{
+  align-items:left;
+  /* text-align: center; */
+  background-color: transparent;
+}
+
+
+.village-section >.card-1 .text-center{
+  align-items: center;
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--white);
+  font-family: var(--butler);
+
+
+}
+.village-section.text-center > .brand-name{
+  font-family: var(--futura);
+}
+ 
+
+.village-section > .card .card-subtitle{
+  font-size: 1.8rem;
+  letter-spacing: 5px;
+  font-family: var(--apercu);
+  text-transform: uppercase;
+  /* margin-left: 12rem; */
+  margin-top:2rem;
+  color: var(--red);
+
+}
+
+.village-section > .card .card-title{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 2.8rem;
+  color: var(--white);
+}
+.village-section > .card .card-title .brand-name{
+  font-family:var(--futura) ;
+}
+
+.village-section > .card .address{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1.4rem;
+  color: var(--l-gray);
+}
+.village-section > .card .phone{
+  margin-top: 0px;
+  /* margin-left: 12rem; */
+  font-size: 1.4rem;
+  color: var(--l-gray);
+}
+
+.village-section > .card button{
+  margin-top: 2rem;
+  /* margin-left: 12rem; */
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem .8rem;
+  border: 1px solid #28a745;
+  border-radius: 3rem;
+  /* background-color:green; */
+  max-width: 160px;
+  background-color:#28a745;
+  transition:all 0.5s ease-in-out;
+  
+
+}
+.village-section > .card button:hover{
+background-color:transparent;
+}
+.village-section > .card button span{
+  background-color: var(--white);
+  color: var(--red);
+  padding: .5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+
+}
+.village-section > .card button span i{
+  transform: rotate(-45deg);
+}
+  /* village section ended */
+
+
+
+
+/* opening section started */
+.opening-section{
+  gap: 4rem;
+  /* background-color: var(--bg-grey); */
+  margin-top: 4rem;
+  padding: 3rem;
+  /* background-color: yellow; */
+}
+
+
+.opening-section >.card-1{
+/* background-color: red; */
+margin-top: 4rem;
+width: 100%;
+/* min-height: 500px; */
+border: 0px;
+background-color: transparent;
+}
+.opening-section >.card{
+align-items:center;
+text-align: center;
+/* background-color:green; */
+padding: 1.5rem 6rem;
+}
+.opening-section >.card img{
+  max-width: 50px;
+}
+
+.opening-section >.card-1 .text-center{
+align-items: center;
+text-align: center;
+margin-top: 1.2rem;
+font-size: 4rem;
+font-weight: 300;
+color: var(--white);
+font-family: var(--butler);
+
+
+}
+.opening-section.text-center > .brand-name{
+font-family: var(--futura);
+}
+
+
+.opening-section > .card .card-subtitle{
+font-size: 1.2rem;
+letter-spacing: 5px;
+font-family: var(--apercu);
+text-transform: uppercase;
+/* margin-left: 12rem; */
+margin-top:2rem;
+color: var(--red);
+
+}
+
+.opening-section > .card .card-title{
+margin-top: 0px;
+/* margin-left: 12rem; */
+font-size: 2.4rem;
+color: var(--black);
+/* font-weight: 700; */
+font-family:var(--apercu) ;
+}
+.opening-section > .card .card-title .brand-name{
+font-size:2.8rem;
+font-weight: 700;
+}
+
+/* opening section ended */
+
+
+/* footer section started */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  font-family:var(--apercu);
+  background-color: var(--bg-grey);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  background-color: var(--bg-grey);
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+.footer-column img{
+  max-width: 165px;
+  margin-bottom: 2rem;
+}
+.footer-column p{
+  color: var(--l-gray);
+  font-size: 1.5rem;
+  font-family: var(--apercu);
+}
+.footer-column .socials{
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+.footer-column .socials span{
+  padding: 1.5rem;
+  background-color: var(--red);
+  border-radius: 5rem;
+  margin: 1rem;
+  text-align: center;
+  /* font-size: 1rem; */
+}
+.footer-column .socials span i{
+  font-size: 1.5rem;
+}
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  /* border-bottom: 2px solid #555; */
+  padding-bottom: 5px;
+  font-family: var(--butler);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-family: var(--butler);
+  color: var(--l-gray);
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* footer section ended */
