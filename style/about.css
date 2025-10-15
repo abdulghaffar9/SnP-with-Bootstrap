@@ -57,6 +57,7 @@ html {
     src: url(../fonts/Apercu\ Regular.woff2);
   }
 
+
   /* nav bar started */
   nav{
     gap: 8rem;
@@ -102,36 +103,92 @@ html {
   /* nav bar ended */
 
 
-  /* brand container started */
-  .container{
-    margin-top: 3rem;
-    gap: 8rem;
-  }
-  .container .card{
-    background-color: transparent;
-    margin: 2.8rem;
-    align-items: center;
-   
-  }
 
-  .container .card img{
-    background-color:var(--white);
-   padding: 0px 50px;
-   min-width: 280px;
-   
-  }
-  .container .card .btn{
-    color: white;
-    border-color: var(--bg-grey);
-    font-size: 1.6rem;
-    font-family:var(--apercu);
-    min-width: 150px;
-    padding: 1rem;
-  }
+  /* intro started */
   .text-center{
     align-items: center;
     text-align: center;
     margin-top: 1.2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: var(--butler);
+
+  }
+  .second{
+    font-family: var(--apercu);
+    font-weight: 400;
+    margin: 4rem;
+  }
+
+  .parra{
+    align-items: center;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 1.8rem;
+    /* font-weight: 300; */
+    color: var(--l-gray);
+  }
+  .para-2{
+    margin-top: -2rem;
+  }
+  /* intro ended */
+
+
+
+  .franchise-section{
+    gap: 1rem;
+  
+   
+  }
+
+.franchise-section >.card{
+  margin: 2rem;
+  width: 45%;
+ margin-top: 5rem;
+ border: 0px;
+ background-color: transparent;
+
+}
+.franchise-section >.card .parra{
+    margin-top: 10px;
+    text-align:left;
+    font-size: 1.6rem;
+}
+.franchise-section >.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.franchise-section > .card .card-subtitle{
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-family: var(--apercu);
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: var(--red);
+}
+
+.franchise-section > .card .card-title{
+  margin-top: 0px;
+  font-size: 3.5rem;
+  color: var(--white);
+}
+.franchise-section > .card .card-title .brand-name{
+    font-family:var(--futura) ;
+  }
+
+
+
+
+  /* franchise section ended */
+
+  /* express section started */
+
+  .text-center{
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
     font-size: 4rem;
     font-weight: 300;
 
@@ -139,119 +196,6 @@ html {
   .text-center > .brand-name{
     font-family: var(--futura);
   }
-  .parra{
-    align-items: center;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1.8rem;
-    /* font-weight: 300; */
-    color: var(--l-gray);
-  }
-
-
-
-  /* brand container ended */
-
-
-  
-  /* franchise section started */
-  .franchise-section{
-    gap: 1rem;
-    /* background-color: var(--bg-grey); */
-    /* background-color: yellow; */
-  }
-
-.franchise-section >.card{
-  /* background-color: red; */
-  margin: 2rem;
-  width: 45%;
- /* min-height: 500px; */
- border: 0px;
- background-color: transparent;
-}
-.franchise-section >.card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.franchise-section > .card-1{
- width: 100%;
- background-color:transparent;
-}
-.franchise-section > .card-1 h1{
-  color: var(--white);
-}
-.franchise-section > .card .card-subtitle{
-  font-size: 2rem;
-  letter-spacing: 5px;
-  font-family: var(--apercu);
-  text-transform: uppercase;
-  /* margin-left: 12rem; */
-  margin-bottom: 0px;
-  color: var(--red);
-}
-
-.franchise-section > .card .card-title{
-  margin-top: 0px;
-  /* margin-left: 12rem; */
-  font-size: 3.5rem;
-  color: var(--white);
-}
-.franchise-section > .card .card-title .brand-name{
-  font-family:var(--futura) ;
-}
-
-.franchise-section > .card .address{
-  margin-top: 0px;
-  /* margin-left: 12rem; */
-  font-size: 1.5rem;
-  color: var(--l-gray);
-}
-
-.address::before{
-  content: "\f3c5";
-  font-family:"Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right:8px ;
-}
-.franchise-section > .card .phone{
-  margin-top: 0px;
-  /* margin-left: 12rem; */
-  font-size: 1.5rem;
-  color: var(--l-gray);
-}
-.phone::before{
-  content: "\f095";
-  font-family:"Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right:8px ;
-}
-
-.franchise-section > .card button{
-  margin-top: 2rem;
-  /* margin-left: 12rem; */
-  font-size: 1.5rem;
-  color: var(--white);
-  padding: 1rem .5rem;
-  border: 1px solid white;
-  border-radius: 3rem;
-  /* background-color:green; */
-  max-width: 160px;
-  background-color: transparent;
-  
-
-}
-.franchise-section > .card button span{
-  background-color: var(--white);
-  color: var(--red);
-  padding: .5rem;
-  border-radius: 2rem;
-  margin-left: 1rem;
-}
-
-  /* franchise section ended */
-
-  /* express section started */
 
 
 
@@ -355,6 +299,7 @@ html {
 }
   /* express section ended */
 
+
   /* village section started */
 
   .village-section{
@@ -362,6 +307,7 @@ html {
     background-color: var(--bg-grey);
     margin-top: 3rem;
     padding-bottom: 5rem;
+    width: 100%;
     /* background-color: yellow; */
   }
   .village-section > img{
@@ -465,157 +411,84 @@ background-color:transparent;
   /* village section ended */
 
 
-
-
-/* opening section started */
-.opening-section{
-  gap: 4rem;
-  /* background-color: var(--bg-grey); */
-  margin-top: 4rem;
-  padding: 3rem;
-  /* background-color: yellow; */
-}
-
-
-.opening-section >.card-1{
-/* background-color: red; */
-margin-top: 4rem;
-width: 100%;
-/* min-height: 500px; */
-border: 0px;
-background-color: transparent;
-}
-.opening-section >.card{
-align-items:center;
-text-align: center;
-/* background-color:green; */
-padding: 1.5rem 6rem;
-}
-.opening-section >.card img{
-  max-width: 50px;
-}
-
-.opening-section >.card-1 .text-center{
-align-items: center;
-text-align: center;
-margin-top: 1.2rem;
-font-size: 4rem;
-font-weight: 300;
-color: var(--white);
-font-family: var(--butler);
-
-
-}
-.opening-section.text-center > .brand-name{
-font-family: var(--futura);
-}
-
-
-.opening-section > .card .card-subtitle{
-font-size: 1.2rem;
-letter-spacing: 5px;
-font-family: var(--apercu);
-text-transform: uppercase;
-/* margin-left: 12rem; */
-margin-top:2rem;
-color: var(--red);
-
-}
-
-.opening-section > .card .card-title{
-margin-top: 0px;
-/* margin-left: 12rem; */
-font-size: 2.4rem;
-color: var(--black);
-/* font-weight: 700; */
-font-family:var(--apercu) ;
-}
-.opening-section > .card .card-title .brand-name{
-font-size:2.8rem;
-font-weight: 700;
-}
-
-/* opening section ended */
-
-
-/* footer section started */
+  /* footer section started */
 
 .footer {
-  background-color: #222;
-  color: #fff;
-  padding: 40px 0;
-  font-family:var(--apercu);
-  background-color: var(--bg-grey);
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0 20px;
-  background-color: var(--bg-grey);
-}
-
-.footer-column {
-  flex: 1 1 200px;
-  min-width: 200px;
-}
-.footer-column img{
-  max-width: 165px;
-  margin-bottom: 2rem;
-}
-.footer-column p{
-  color: var(--l-gray);
-  font-size: 1.5rem;
-  font-family: var(--apercu);
-}
-.footer-column .socials{
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-}
-.footer-column .socials span{
-  padding: 1.5rem;
-  background-color: var(--red);
-  border-radius: 5rem;
-  margin: 1rem;
-  text-align: center;
-  /* font-size: 1rem; */
-}
-.footer-column .socials span i{
-  font-size: 1.5rem;
-}
-.footer-column h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  /* border-bottom: 2px solid #555; */
-  padding-bottom: 5px;
-  font-family: var(--butler);
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 10px;
-  font-family: var(--butler);
-  color: var(--l-gray);
-  font-size: 1.5rem;
-  margin-right: 2rem;
-}
-
-.footer-column ul li a {
-  color: #ccc;
-  text-decoration: none;
-}
-
-.footer-column ul li a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-/* footer section ended */
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family:var(--apercu);
+    background-color: var(--bg-grey);
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width:100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    background-color: var(--bg-grey);
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  .footer-column img{
+    max-width: 165px;
+    margin-bottom: 2rem;
+  }
+  .footer-column p{
+    color: var(--l-gray);
+    font-size: 1.5rem;
+    font-family: var(--apercu);
+  }
+  .footer-column .socials{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+  .footer-column .socials span{
+    padding: 1.5rem;
+    background-color: var(--red);
+    border-radius: 5rem;
+    margin: 1rem;
+    text-align: center;
+    /* font-size: 1rem; */
+  }
+  .footer-column .socials span i{
+    font-size: 1.5rem;
+  }
+  .footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    /* border-bottom: 2px solid #555; */
+    padding-bottom: 5px;
+    font-family: var(--butler);
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+    font-family: var(--butler);
+    color: var(--l-gray);
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+  
+  .footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* footer section ended */
