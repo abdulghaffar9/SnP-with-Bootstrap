@@ -33,7 +33,7 @@ html {
     padding: 0;
     margin: 9;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
   
   @font-face {
@@ -106,6 +106,9 @@ html {
   .container{
     margin-top: 3rem;
     gap: 8rem;
+    display: flex;
+    flex-wrap: nowrap;
+   
   }
   .container .card{
     background-color: transparent;
@@ -159,7 +162,13 @@ html {
     gap: 1rem;
     /* background-color: var(--bg-grey); */
     /* background-color: yellow; */
+    position: relative;
   }
+.franchise-section .letter-s{
+  position: absolute;
+  top: 10px;
+  left: 75%;
+}
 
 .franchise-section >.card{
   /* background-color: red; */
@@ -261,6 +270,19 @@ html {
     margin-top: 4rem;
     padding-bottom: 4rem;
     /* background-color: yellow; */
+    position: relative;
+    overflow: hidden;
+  }
+  .express-section .letter-p{
+   position: absolute;
+   top: 10px;
+   /* left: 50%; */
+   /* /* width: 100%; */
+   height: 2000px; */
+
+  }
+  .express-section .letter-p img{
+    height: 100%;
   }
 
 .express-section >.card-1{
@@ -453,14 +475,14 @@ background-color:transparent;
 }
 .village-section > .card button span{
   background-color: var(--white);
-  color: var(--red);
+  color: #28a745;
   padding: .5rem;
   border-radius: 2rem;
   margin-left: 1rem;
 
 }
 .village-section > .card button span i{
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
 }
   /* village section ended */
 
@@ -546,6 +568,12 @@ font-weight: 700;
   padding: 40px 0;
   font-family:var(--apercu);
   background-color: var(--bg-grey);
+  position: relative;
+}
+.footer .letter-s{
+  position: absolute;
+  top: 150px;
+  left: 2%;
 }
 
 .footer-container {
@@ -619,3 +647,55 @@ font-weight: 700;
 }
 
 /* footer section ended */
+
+
+/* media query for small devices */
+
+@media  (max-width: 576px) {
+  .container{
+    margin-top: 3rem;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .carousel{
+    margin-top: 5rem;
+  }
+
+  .nav-bar{
+    display: none;
+  }
+
+  .franchise-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+  
+
+  }
+  .franchise-section .card{
+    width: 100vw;
+    align-content: center;
+  }
+
+
+  .village-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  justify-content: center;
+  
+  align-content: center;
+  }
+  .village-section .card{
+    align-items: center;
+  }
+  .village-section > img{
+    margin-top:50px;
+    width: 400px;
+    margin-left: -20px;
+    }
+}
