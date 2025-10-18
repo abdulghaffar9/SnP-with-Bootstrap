@@ -19,19 +19,36 @@
 </head>
   <body>
     <!-- nav bar started -->
-    <nav class="nav d-flex justify-evenly item-center">
-        <img src="./assets/nav logo.webp" alt="">
+    <nav class="nav justify-evenly item-center">
+        <img src="./assets/nav logo.webp" alt="" >
 
     <div class="nav-bar">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="publications.html">Publications</a>
-        <button class="franchise-btn">Get a Franchise</button>
+        <button class="franchise-btn" >Get a Franchise</button>
         <button class="order-btn">Order Online <span><i class="fa-solid fa-arrow-right"></i></span></button>
     </div>
-
     </nav>
     <!-- nav bar ended -->
+
+     <!-- navbar mobile started -->
+    <div class="mobile-navbar">
+      <i class="fa-solid fa-bars burger" onclick="showMenu()"></i>
+      <img src="assets/nav logo.webp" alt="">
+      <button class="order-btn">Order Online <span right-icon><i class="fa-solid fa-arrow-right "></i></span></button>
+    </div>
+
+     <!-- menu bar started -->
+     <div class="menu-bar">
+      <i class="fa-solid fa-xmark cross" onclick="hideMenu()"></i>
+      <a href="index.html">Home</a> 
+      <a href="about.html">About Us</a> 
+      <a href="publications.html">Publications</a> 
+      <a href="">Get a Franchise</a> 
+     </div>
+     <!-- menu bar ended -->
+  <!-- navbar mobile ended -->
 <main>
     <!-- carousel started -->
     <section class="carousel">
@@ -396,8 +413,7 @@
     
    
    
-   
-   
+    <script src="./javascript/app.js"></script>
     <script src="https://kit.fontawesome.com/d1f2bac72a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
