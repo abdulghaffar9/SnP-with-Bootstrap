@@ -115,7 +115,8 @@ html {
     font-size: 1.6rem;
     padding: 1.6rem;
     border-radius:3rem;
-    /* border: 1px solid var(--white); */
+
+    border: 0px solid var(--white);
     font-family: var(--apercu);
     background-color:var(--red);
     color: var(--white);
