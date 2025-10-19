@@ -61,6 +61,7 @@ html {
   /* nav bar started */
   nav{
     gap: 8rem;
+    display:flex;
   }
 
   .nav-bar{
@@ -100,6 +101,72 @@ html {
     padding: .5rem;
     border-radius: 2rem;
   }
+
+  .mobile-navbar{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mobile-navbar > img{
+    width: 165px;
+  }
+  .mobile-navbar > button{
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border-radius:3rem;
+
+    border: 0px solid var(--white);
+    font-family: var(--apercu);
+    background-color:var(--red);
+    color: var(--white);
+    margin: 1rem;
+  }
+
+  .mobile-navbar > .burger{
+    font-size: 3rem;
+
+  }
+
+
+  .menu-bar{
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+
+  
+  }
+  .menu-bar :nth-child(1){
+    margin-top: 6rem;
+  }
+  .menu-bar > .cross{
+    display:block;
+    color: #000000;
+    font-size: 4rem;
+    margin-left: 300px;
+    cursor: pointer;
+  }
+  .menu-bar > a{
+    align-items: center;
+    font-size: 2rem;
+    color: var(--black);
+    /* margin-top: 5rem; */
+    font-family: var(--apercu);
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    /* background-color: red; */
+    padding: 2rem;
+    width: 400px;
+  }
   /* nav bar ended */
 
 
@@ -112,12 +179,14 @@ html {
     font-size: 4rem;
     font-weight: bolder;
     font-family: var(--butler);
+    
 
   }
   .second{
     font-family: var(--apercu);
     font-weight: 400;
     margin: 4rem;
+   
   }
 
   .parra{
@@ -127,9 +196,12 @@ html {
     font-size: 1.8rem;
     /* font-weight: 300; */
     color: var(--l-gray);
+    padding: 2rem;
   }
   .para-2{
     margin-top: -2rem;
+    padding: 2rem;
+
   }
   /* intro ended */
 
@@ -150,9 +222,11 @@ html {
 
 }
 .franchise-section >.card .parra{
-    margin-top: 10px;
+   margin: 0 auto;
+    
     text-align:left;
     font-size: 1.6rem;
+    background-color: red;
 }
 .franchise-section >.card img{
   width: 100%;
@@ -492,3 +566,82 @@ background-color:transparent;
   }
   
   /* footer section ended */
+
+
+  @media  (max-width: 1000px) {
+   .nav{
+      display: none;
+    } 
+    .mobile-navbar{
+      display:flex;
+      align-items: center;
+      
+      
+    }
+    .mobile-navbar > button{
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius:3rem;
+      /* border: 1px solid var(--white); */
+      font-family: var(--apercu);
+      background-color:var(--red);
+      color: var(--white);
+      margin: 1rem;
+    }
+  
+    .mobile-navbar > i{
+      font-size: 2rem;
+  
+    }
+
+    .container{
+      margin-top: 3rem;
+      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      /* padding: 3rem; */
+    }
+    
+    .carousel{
+      margin-top: 5rem;
+    }
+  
+    
+  
+    .franchise-section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: center;
+      /* padding: 3rem; */
+    
+  
+    }
+    .franchise-section .card{
+      width: 100vw;
+      align-content: center;
+    }
+  
+  
+    .village-section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    justify-content: center;
+    
+    align-content: center;
+    }
+    .village-section .card{
+      align-items: center;
+    }
+    .village-section > img{
+      margin-top:50px;
+      width: 400px;
+      margin-left: -20px;
+      }
+
+      .parras{
+        padding: 3rem;
+      }
+  }
