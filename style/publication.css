@@ -61,6 +61,7 @@ html {
   /* nav bar started */
   nav{
     gap: 8rem;
+    display: block;
   }
 
   .nav-bar{
@@ -100,17 +101,86 @@ html {
     padding: .5rem;
     border-radius: 2rem;
   }
+
+
+  .mobile-navbar{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mobile-navbar > img{
+    width: 165px;
+  }
+  .mobile-navbar > button{
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border-radius:3rem;
+
+    border: 0px solid var(--white);
+    font-family: var(--apercu);
+    background-color:var(--red);
+    color: var(--white);
+    margin: 1rem;
+  }
+
+  .mobile-navbar > .burger{
+    font-size: 3rem;
+
+  }
+
+
+  .menu-bar{
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    display:none;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+ 
+
+  
+  }
+  .menu-bar :nth-child(1){
+    margin-top: 6rem;
+  }
+  .menu-bar > .cross{
+    display:block;
+    color: #000000;
+    font-size: 4rem;
+    margin-left: 300px;
+    cursor: pointer;
+  }
+  .menu-bar > a{
+    align-items: center;
+    font-size: 2rem;
+    color: var(--black);
+    /* margin-top: 5rem; */
+    font-family: var(--apercu);
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    /* background-color: red; */
+    padding: 2rem;
+    width: 400px;
+  }
   /* nav bar ended */
+
 
 /* publication started */
 .publication-container{
     /* background-color: yellow; */
     display: flex;
-    /* flex-direction:column; */
+ 
     gap: 3rem;
     padding: 50px;
     justify-content:center;
     margin-top: 2rem;
+    
     
     
 }
@@ -121,6 +191,8 @@ html {
     margin:0px;
     width: 500px;
     height: 600px;
+
+   
 }
 .publication-container > .book-card img{
   width: 100%;
@@ -255,112 +327,32 @@ html {
   
   /* footer section ended */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer section started */
-
-.footer {
-    background-color: #222;
-    color: #fff;
-    padding: 40px 0;
-    font-family:var(--apercu);
-    background-color: var(--bg-grey);
+@media (max-width:1000px){
+  body{
+    /* background-color: yellow; */
   }
-  
-  .footer-container {
+
+  .nav{
+    display: none;
+    /* background-color: yellow; */
+  }
+
+  .mobile-navbar{
     display: flex;
-    justify-content: space-between;
-    max-width:100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
-    background-color: var(--bg-grey);
   }
-  
-  .footer-column {
-    flex: 1 1 200px;
-    min-width: 200px;
+}
+
+
+@media (max-width:576px){
+  body{
+    /* background-color: yellow; */
   }
-  .footer-column img{
-    max-width: 165px;
-    margin-bottom: 2rem;
+  .publication-container{
+    flex-direction: column;
   }
-  .footer-column p{
-    color: var(--l-gray);
-    font-size: 1.5rem;
-    font-family: var(--apercu);
+  .publication-container > .book-card{
+       /* flex-direction:column; */
+    flex-grow: 1;
   }
-  .footer-column .socials{
-    margin-bottom: 5rem;
-    margin-top: 2rem;
-  }
-  .footer-column .socials span{
-    padding: 1.5rem;
-    background-color: var(--red);
-    border-radius: 5rem;
-    margin: 1rem;
-    text-align: center;
-    /* font-size: 1rem; */
-  }
-  .footer-column .socials span i{
-    font-size: 1.5rem;
-  }
-  .footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    /* border-bottom: 2px solid #555; */
-    padding-bottom: 5px;
-    font-family: var(--butler);
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 10px;
-    font-family: var(--butler);
-    color: var(--l-gray);
-    font-size: 1.5rem;
-    margin-right: 2rem;
-  }
-  
-  .footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  /* footer section ended */
+
+}

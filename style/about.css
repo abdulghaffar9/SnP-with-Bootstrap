@@ -186,10 +186,6 @@ html {
     font-family: var(--apercu);
     font-weight: 400;
     margin: 4rem;
-   
-  }
-
-  .parra{
     align-items: center;
     text-align: center;
     margin-top: 8rem;
@@ -221,8 +217,8 @@ html {
  background-color: transparent;
 
 }
-.franchise-section >.card .parra{
-   margin: 0 auto;
+.franchise-section >.card .para{
+  margin: 0 auto;
     
     text-align:left;
     font-size: 1.6rem;
@@ -577,6 +573,7 @@ background-color:transparent;
       align-items: center;
       
       
+      
     }
     .mobile-navbar > button{
       font-size: 1rem;
@@ -594,19 +591,6 @@ background-color:transparent;
   
     }
 
-    .container{
-      margin-top: 3rem;
-      gap: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      /* padding: 3rem; */
-    }
-    
-    .carousel{
-      margin-top: 5rem;
-    }
-  
-    
   
     .franchise-section{
       display: flex;
@@ -614,7 +598,9 @@ background-color:transparent;
       flex-wrap: wrap;
       overflow: hidden;
       justify-content: center;
+      align-items: center;
       /* padding: 3rem; */
+      /* background-color: blue; */
     
   
     }
@@ -641,7 +627,28 @@ background-color:transparent;
       margin-left: -20px;
       }
 
-      .parras{
+      .parra{
         padding: 3rem;
+        font-size: 1.5rem;
+        align-content: flex-start;
       }
+  }
+
+
+
+  @media (max-width:576px){
+    body{
+      /* background-color: blue; */
+    }
+
+    .village-section{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* justify-content:center; */
+      justify-content: space-around;
+    /* background-color: green; */
+    /* align-items: flex-start; */
+    margin-left: -40px;
+    }
   }
